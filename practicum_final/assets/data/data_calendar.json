@@ -1,0 +1,162 @@
+[
+  {
+    "nombre": "ESTADISTICA Y PROBABILIDAD", 
+    "docente": "TORRES DIAZ JUAN CARLOS",
+    "tipo": "Docencia",
+    "inicioCL": "10:00",
+    "finCL": "10:59",
+    "edificio": "9",
+    "aula": "916",
+    "date": "2024/02/05"
+  },
+  {
+    "nombre": "ESTADISTICA Y PROBABILIDAD",
+    "docente": "TORRES DIAZ JUAN CARLOS",
+    "tipo": "Practica",
+    "inicioCL": "11:00",
+    "finCL": "11:59",
+    "edificio": "9",
+    "aula": "916",
+    "date": "2024/02/05"
+  },
+  {
+    "nombre": "ESTADISTICA Y PROBABILIDAD",
+    "docente": "TORRES DIAZ JUAN CARLOS",
+    "tipo": "Tutoria",
+    "inicioCL": "12:00",
+    "finCL": "12:59",
+    "edificio": "9",
+    "aula": "916",
+    "date": "2024/02/05"
+  },
+  {
+    "nombre": "SISTEMAS OPERATIVOS",
+    "docente": "JARAMILLO CAMPOVERDE BYRON GUSTAVO",
+    "tipo": "Docencia",
+    "inicioCL": "07:00",
+    "finCL": "07:59",
+    "edificio": "5",
+    "aula": "52A",
+    "date": "2024/02/06"
+  },
+  {
+    "nombre": "SISTEMAS OPERATIVOS",
+    "docente": "JARAMILLO CAMPOVERDE BYRON GUSTAVO",
+    "tipo": "Practica",
+    "inicioCL": "08:00",
+    "finCL": "08:59",
+    "edificio": "5",
+    "aula": "52A",
+    "date": "2024/02/06"
+  },
+  {
+    "nombre": "SISTEMAS OPERATIVOS",
+    "docente": "JARAMILLO CAMPOVERDE BYRON GUSTAVO",
+    "tipo": "Practica",
+    "inicioCL": "08:00",
+    "finCL": "08:59",
+    "edificio": "4",
+    "aula": "421",
+    "date": "2024/02/07"
+  },
+  {
+    "nombre": "FUNDAMENTOS DE BASE DE DATOS",
+    "docente": "LANDACAY JARAMILLO JORGE LUIS",
+    "tipo": "Docencia",
+    "inicioCL": "15:00",
+    "finCL": "16:59",
+    "edificio": "5",
+    "aula": "53I",
+    "date": "2024/02/06"
+  },
+  {
+    "nombre": "FUNDAMENTOS DE BASE DE DATOS",
+    "docente": "LANDACAY JARAMILLO JORGE LUIS",
+    "tipo": "Practica",
+    "inicioCL": "18:00",
+    "finCL": "19:59",
+    "edificio": "5",
+    "aula": "53I",
+    "date": "2024/02/07"
+  },
+  {
+    "nombre": "FUNDAMENTOS DE BASE DE DATOS",
+    "docente": "LANDACAY JARAMILLO JORGE LUIS",
+    "tipo": "Tutoria",
+    "inicioCL": "20:00",
+    "finCL": "20:59",
+    "edificio": "5",
+    "aula": "53I",
+    "date": "2024/02/07"
+  },
+  {
+    "nombre": "ÉTICA Y MORAL",
+    "docente": "RÍOS HURTADO DANIELA ALEXANDRA",
+    "tipo": "Docencia",
+    "inicioCL": "11:00",
+    "finCL": "11:59",
+    "edificio": "4",
+    "aula": "414",
+    "date": "2024/02/08"
+  },
+  {
+    "nombre": "ÉTICA Y MORAL",
+    "docente": "RÍOS HURTADO DANIELA ALEXANDRA",
+    "tipo": "Practica",
+    "inicioCL": "12:00",
+    "finCL": "12:59",
+    "edificio": "4",
+    "aula": "414",
+    "date": "2024/02/08"
+  },
+  {
+    "nombre": "ÉTICA Y MORAL",
+    "docente": "RÍOS HURTADO DANIELA ALEXANDRA",
+    "tipo": "Tutoria",
+    "inicioCL": "13:00",
+    "finCL": "13:59",
+    "edificio": "4",
+    "aula": "414",
+    "date": "2024/02/08"
+  },
+  {
+    "nombre": "PRACTICUM 2.1",
+    "docente": "GUAMAN BASTIDAS FRANCO OLIVIO",
+    "tipo": "Tutoria",
+    "inicioCL": "11:00",
+    "finCL": "11:29",
+    "edificio": "4",
+    "aula": "425",
+    "date": "2024/02/09"
+  },
+  {
+    "nombre": "INGENIERIA WEB",
+    "docente": "RAMIREZ CORONEL RAMIRO LEONARDO",
+    "tipo": "Docencia",
+    "inicioCL": "10:00",
+    "finCL": "10:59",
+    "edificio": "5",
+    "aula": "53H",
+    "date": "2024/02/07"
+  },
+  {
+    "nombre": "INGENIERIA WEB",
+    "docente": "RAMIREZ CORONEL RAMIRO LEONARDO",
+    "tipo": "Practica",
+    "inicioCL": "11:00",
+    "finCL": "11:59",
+    "edificio": "5",
+    "aula": "53H",
+    "date": "2024/02/07"
+  },
+  {
+    "nombre": "INGENIERIA WEB",
+    "docente": "RAMIREZ CORONEL RAMIRO LEONARDO",
+    "tipo": "Tutoria",
+    "inicioCL": "12:00",
+    "finCL": "12:59",
+    "edificio": "5",
+    "aula": "53H",
+    "date": "2024/02/07"
+  }
+]
