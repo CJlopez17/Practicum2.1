@@ -2,7 +2,6 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:practicum_final/models/data_calendar.dart';
-import 'package:syncfusion_flutter_calendar/calendar.dart';
 
 class MyCalendarDataSource{
   static Future<List<Data_Calendar>> cargaClases() async{
@@ -15,7 +14,7 @@ class MyCalendarDataSource{
     ).toList();
   }
 }
-
+/*
 class EventDataSource extends CalendarDataSource  {
   EventDataSource(List<Data_Calendar> source) {
     appointments = source.map((data) => Appointment(
@@ -36,4 +35,4 @@ class EventDataSource extends CalendarDataSource  {
       subject: data.material,
     )).toList();
   }
-}
+}*/
