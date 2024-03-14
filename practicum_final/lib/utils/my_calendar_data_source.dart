@@ -4,35 +4,18 @@ import 'package:flutter/services.dart';
 import 'package:practicum_final/models/data_calendar.dart';
 
 class MyCalendarDataSource{
-  static Future<List<Data_Calendar>> cargaClases() async{
+  static Future<List<DataCalendar>> cargaClases() async{
     String jsonString = await rootBundle.loadString('assets/data/data_calendar.json');
     List<dynamic> jsonData = jsonDecode(jsonString);
 
-    return jsonData.map((eventJson){
-        return Data_Calendar.fromJsonMap(eventJson);
-      }
-    ).toList();
+    List<DataCalendar> events = jsonData
+      .map((data) => DataCalendar.fromJsonMap(data))
+      .toList();
+
+      return events;
+  }
+  
+  List<DataCalendar> getDataAll(List<DataCalendar> allEvents){
+    return List.from(allEvents);
   }
 }
-/*
-class EventDataSource extends CalendarDataSource  {
-  EventDataSource(List<Data_Calendar> source) {
-    appointments = source.map((data) => Appointment(
-      startTime: DateTime(
-        data.fecha.year,
-        data.fecha.month,
-        data.fecha.day,
-        data.inicioCL.hour,
-        data.inicioCL.minute,
-      ),
-      endTime: DateTime(
-        data.fecha.year,
-        data.fecha.month,
-        data.fecha.day,
-        data.finCL.hour,
-        data.finCL.minute,
-      ),
-      subject: data.material,
-    )).toList();
-  }
-}*/

@@ -1,46 +1,80 @@
 import 'package:flutter/material.dart';
 
-class Data_Calendar {
-  final String material;
+class DataCalendar {
+  final String nombre;
   final String? docente;
   final String tipo;
-  final TimeOfDay inicioCL; // Cambiado a TimeOfDay para representar horas
-  final TimeOfDay finCL; // Cambiado a TimeOfDay para representar horas
-  final String edificio;
-  final String aula;
-  final DateTime fecha; // Mantenemos como DateTime para representar fechas
+  final String ubicacion; 
+  final String aula; 
+  final DateTime? fechaInicio;
+  final DateTime? fechaFin;
+  final String? nivelAcademico;
+  final String? modalidad;
+  final String? paralelo;
+  final TimeOfDay horaInicio;
+  final TimeOfDay horaFin;
+  final String? periodoAcademico;
+  final String? day;
 
-  Data_Calendar({
-    required this.material,
+  static const Map<String, String> dayMapping = {
+    'Lunes': 'Monday',
+    'Martes': 'Tuesday',
+    'Miercoles': 'Wednesday',
+    'Jueves': 'Thursday',
+    'Viernes': 'Friday',
+    'Sabado': 'Saturday',
+    'Domingo': 'Sunday',
+  };
+
+  DataCalendar({
+    required this.nombre,
     this.docente,
     required this.tipo,
-    required this.inicioCL,
-    required this.finCL,
-    required this.edificio,
+    required this.ubicacion,
     required this.aula,
-    required this.fecha,
+    this.fechaInicio,
+    this.fechaFin,
+    this.nivelAcademico,
+    this.modalidad,
+    this.paralelo,
+    required this.horaInicio,
+    required this.horaFin,
+    this.periodoAcademico,
+    this.day,
   });
 
-  factory Data_Calendar.fromJsonMap(Map<String, dynamic> json) => Data_Calendar(
-        material: json['nombre'],
+  factory DataCalendar.fromJsonMap(Map<String, dynamic> json) => DataCalendar(
+        nombre: json['nombre'],
         docente: json['docente'],
         tipo: json['tipo'],
-        inicioCL: _parseTime(json['inicioCL']),
-        finCL: _parseTime(json['finCL']),
-        edificio: json['edificio'],
+        ubicacion: json['ubicacion'],
         aula: json['aula'],
-        fecha: DateTime.parse(json['date']),
+        fechaInicio: DateTime.parse(json['fecha_inicio']),
+        fechaFin: DateTime.parse(json['fecha_fin']),
+        nivelAcademico: json['nivel_academico'],
+        modalidad: json['modalidad'],
+        paralelo: json['paralelo'],
+        horaInicio: _parseTime(json['hora_inicio']),
+        horaFin: _parseTime(json['hora_fin']),
+        periodoAcademico: json['periodo_academico'],
+        day: _mapDay(json['day']),
       );
 
   Map<String, dynamic> toJson() => {
-        'nombre': material,
+        'nombre': nombre,
         'docente': docente,
         'tipo': tipo,
-        'inicioCL': _formatTime(inicioCL),
-        'finCL': _formatTime(finCL),
-        'edificio': edificio,
+        'ubicacion': ubicacion,
         'aula': aula,
-        'date': fecha.toIso8601String(),
+        'fechaInicio': fechaInicio,
+        'fechaFin': fechaFin,
+        'nivelAcademico': nivelAcademico,
+        'modalidad': modalidad,
+        "paralelo": paralelo,
+        'fechaInicio': fechaInicio,
+        'fechaFin': fechaFin,
+        'periodoAcademico': periodoAcademico,
+        'day': day
       };
 
   static TimeOfDay _parseTime(String timeString) {
@@ -48,7 +82,7 @@ class Data_Calendar {
     return TimeOfDay(hour: int.parse(parts[0]), minute: int.parse(parts[1]));
   }
 
-  static String _formatTime(TimeOfDay timeOfDay) {
-    return '${timeOfDay.hour}:${timeOfDay.minute}';
+  static String _mapDay(String day) {
+    return dayMapping[day] ?? ''; 
   }
 }

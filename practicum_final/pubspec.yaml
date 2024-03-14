@@ -11,6 +11,8 @@ dependencies:
     sdk: flutter
   calendar_day_view: ^3.3.0
   get: ^4.1.4  
+  calendar_view: ^1.0.4
+  table_calendar: ^3.0.9
 
 dev_dependencies:
   flutter_test:
@@ -19,3 +21,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/data/
+
+
