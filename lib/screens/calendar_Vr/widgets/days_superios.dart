@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:practicum_final/utils/responsive.dart';
+import 'package:get/get.dart';
 
 class daysBarVertical extends StatefulWidget {
   final int todayWeekDate;
@@ -22,7 +22,6 @@ class _daysBarVerticalState extends State<daysBarVertical> {
   final List<String> daysWeek = ['L', 'M', 'X', 'J', 'V', 'S', 'D'];
   @override
   Widget build(BuildContext context) {
-    Responsive responsive = Responsive();
     return Container(
       decoration: BoxDecoration(
         color: const Color(0xFFF2F2F2),
@@ -43,8 +42,8 @@ class _daysBarVerticalState extends State<daysBarVertical> {
               widget.onTap(index + 1);
             },
             child: Container(
-              width: responsive.wp(10),
-              height: responsive.hp(6),
+              width: Get.width/8,
+              height: Get.height/14,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: isSelected

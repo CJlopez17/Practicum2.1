@@ -1,0 +1,1296 @@
+{
+    "status": 200,
+    "data": [
+        {
+            "title": "ESTADISTICA Y PROBABILIDAD",
+            "description": "ESTADISTICA Y PROBABILIDAD",
+            "authors": [],
+            "category": "Component",
+            "date": null,
+            "image": null,
+            "video": null,
+            "extras": [
+                {
+                    "type": "schuelder",
+                    "name": "Calendario",
+                    "data": [
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "AULA 0916",
+                            "type": "event - component",
+                            "place": "EDIFICIO 09",
+                            "typeSchedule": "PRACTICA",
+                            "beginClass": "11:00",
+                            "endClass": "11:59",
+                            "day": "LUNES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "PRAC",
+                                    "name": "PRACTICA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "TORRES DIAZ JUAN CARLOS"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "AULA 0916",
+                            "type": "event - component",
+                            "place": "EDIFICIO 09",
+                            "typeSchedule": "DOCENCIA",
+                            "beginClass": "10:00",
+                            "endClass": "10:59",
+                            "day": "LUNES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "CLAS",
+                                    "name": "DOCENCIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "TORRES DIAZ JUAN CARLOS"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "AULA 0916",
+                            "type": "event - component",
+                            "place": "EDIFICIO 09",
+                            "typeSchedule": "TUTORIA",
+                            "beginClass": "12:00",
+                            "endClass": "12:59",
+                            "day": "LUNES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "TUTO",
+                                    "name": "TUTORIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "TORRES DIAZ JUAN CARLOS"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "ETICA Y MORAL",
+            "description": "ETICA Y MORAL",
+            "authors": [],
+            "category": "Component",
+            "date": null,
+            "image": null,
+            "video": null,
+            "extras": [
+                {
+                    "type": "schuelder",
+                    "name": "Calendario",
+                    "data": [
+                        {
+                            "title": "H",
+                            "description": null,
+                            "classroom": "AULA 0414",
+                            "type": "event - component",
+                            "place": "EDIFICIO 04",
+                            "typeSchedule": "DOCENCIA",
+                            "beginClass": "11:00",
+                            "endClass": "11:59",
+                            "day": "JUEVES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "CLAS",
+                                    "name": "DOCENCIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "H"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "RIOS HURTADO DANIELA ALEXANDRA"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "H",
+                            "description": null,
+                            "classroom": "AULA 0414",
+                            "type": "event - component",
+                            "place": "EDIFICIO 04",
+                            "typeSchedule": "TUTORIA",
+                            "beginClass": "13:00",
+                            "endClass": "13:59",
+                            "day": "JUEVES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "TUTO",
+                                    "name": "TUTORIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "H"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "RIOS HURTADO DANIELA ALEXANDRA"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "H",
+                            "description": null,
+                            "classroom": "AULA 0414",
+                            "type": "event - component",
+                            "place": "EDIFICIO 04",
+                            "typeSchedule": "PRACTICA",
+                            "beginClass": "12:00",
+                            "endClass": "12:59",
+                            "day": "JUEVES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "PRAC",
+                                    "name": "PRACTICA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "H"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "RIOS HURTADO DANIELA ALEXANDRA"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "INGENIERIA WEB",
+            "description": "INGENIERIA WEB",
+            "authors": [],
+            "category": "Component",
+            "date": null,
+            "image": null,
+            "video": null,
+            "extras": [
+                {
+                    "type": "schuelder",
+                    "name": "Calendario",
+                    "data": [
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "AULA H COMPUTO",
+                            "type": "event - component",
+                            "place": "EDIFICIO 05",
+                            "typeSchedule": "DOCENCIA",
+                            "beginClass": "10:00",
+                            "endClass": "10:59",
+                            "day": "MIERCOLES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "CLAS",
+                                    "name": "DOCENCIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "RAMIREZ CORONEL RAMIRO LEONARDO"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "AULA H COMPUTO",
+                            "type": "event - component",
+                            "place": "EDIFICIO 05",
+                            "typeSchedule": "TUTORIA",
+                            "beginClass": "12:00",
+                            "endClass": "12:59",
+                            "day": "MIERCOLES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "TUTO",
+                                    "name": "TUTORIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "RAMIREZ CORONEL RAMIRO LEONARDO"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "AULA H COMPUTO",
+                            "type": "event - component",
+                            "place": "EDIFICIO 05",
+                            "typeSchedule": "PRACTICA",
+                            "beginClass": "11:00",
+                            "endClass": "11:59",
+                            "day": "MIERCOLES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "PRAC",
+                                    "name": "PRACTICA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "RAMIREZ CORONEL RAMIRO LEONARDO"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "PRACTICUM 2.1",
+            "description": "PRACTICUM 2.1",
+            "authors": [],
+            "category": "Component",
+            "date": null,
+            "image": null,
+            "video": null,
+            "extras": [
+                {
+                    "type": "schuelder",
+                    "name": "Calendario",
+                    "data": [
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "",
+                            "type": "event - component",
+                            "place": "",
+                            "typeSchedule": "PRACTICA",
+                            "beginClass": "13:00",
+                            "endClass": "13:59",
+                            "day": "LUNES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "PRAC",
+                                    "name": "PRACTICA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": ""
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "",
+                            "type": "event - component",
+                            "place": "",
+                            "typeSchedule": "PRACTICA",
+                            "beginClass": "13:00",
+                            "endClass": "13:59",
+                            "day": "MARTES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "PRAC",
+                                    "name": "PRACTICA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": ""
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "",
+                            "type": "event - component",
+                            "place": "",
+                            "typeSchedule": "PRACTICA",
+                            "beginClass": "13:00",
+                            "endClass": "13:59",
+                            "day": "MIERCOLES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "PRAC",
+                                    "name": "PRACTICA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": ""
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "",
+                            "type": "event - component",
+                            "place": "",
+                            "typeSchedule": "PRACTICA",
+                            "beginClass": "11:30",
+                            "endClass": "13:59",
+                            "day": "VIERNES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "PRAC",
+                                    "name": "PRACTICA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": ""
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "AULA 0425",
+                            "type": "event - component",
+                            "place": "EDIFICIO 04",
+                            "typeSchedule": "TUTORIA",
+                            "beginClass": "11:00",
+                            "endClass": "11:29",
+                            "day": "VIERNES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "TUTO",
+                                    "name": "TUTORIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "GUAMAN BASTIDAS FRANCO OLIVIO"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "SISTEMAS OPERATIVOS",
+            "description": "SISTEMAS OPERATIVOS",
+            "authors": [],
+            "category": "Component",
+            "date": null,
+            "image": null,
+            "video": null,
+            "extras": [
+                {
+                    "type": "schuelder",
+                    "name": "Calendario",
+                    "data": [
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "AULA 0424",
+                            "type": "event - component",
+                            "place": "EDIFICIO 04",
+                            "typeSchedule": "PRACTICA",
+                            "beginClass": "08:00",
+                            "endClass": "08:59",
+                            "day": "MARTES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "PRAC",
+                                    "name": "PRACTICA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "JARAMILLO CAMPOVERDE BYRON GUSTAVO"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "AULA 0421",
+                            "type": "event - component",
+                            "place": "EDIFICIO 04",
+                            "typeSchedule": "TUTORIA",
+                            "beginClass": "08:00",
+                            "endClass": "08:59",
+                            "day": "MIERCOLES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "TUTO",
+                                    "name": "TUTORIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "JARAMILLO CAMPOVERDE BYRON GUSTAVO"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "AULA 0424",
+                            "type": "event - component",
+                            "place": "EDIFICIO 04",
+                            "typeSchedule": "DOCENCIA",
+                            "beginClass": "07:00",
+                            "endClass": "07:59",
+                            "day": "MARTES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "CLAS",
+                                    "name": "DOCENCIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "JARAMILLO CAMPOVERDE BYRON GUSTAVO"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "FUNDAMENTOS DE BASE DE DATOS",
+            "description": "FUNDAMENTOS DE BASE DE DATOS",
+            "authors": [],
+            "category": "Component",
+            "date": null,
+            "image": null,
+            "video": null,
+            "extras": [
+                {
+                    "type": "schuelder",
+                    "name": "Calendario",
+                    "data": [
+                        {
+                            "title": "B",
+                            "description": null,
+                            "classroom": "AULA I COMPUTO",
+                            "type": "event - component",
+                            "place": "EDIFICIO 05",
+                            "typeSchedule": "DOCENCIA",
+                            "beginClass": "15:00",
+                            "endClass": "16:59",
+                            "day": "MARTES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "CLAS",
+                                    "name": "DOCENCIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "B"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "LANDACAY JARAMILLO JORGE LUIS"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "B",
+                            "description": null,
+                            "classroom": "AULA I COMPUTO",
+                            "type": "event - component",
+                            "place": "EDIFICIO 05",
+                            "typeSchedule": "PRACTICA",
+                            "beginClass": "18:00",
+                            "endClass": "19:59",
+                            "day": "MIERCOLES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "PRAC",
+                                    "name": "PRACTICA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "B"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "LANDACAY JARAMILLO JORGE LUIS"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "B",
+                            "description": null,
+                            "classroom": "AULA I COMPUTO",
+                            "type": "event - component",
+                            "place": "EDIFICIO 05",
+                            "typeSchedule": "TUTORIA",
+                            "beginClass": "20:00",
+                            "endClass": "20:59",
+                            "day": "MIERCOLES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "TUTO",
+                                    "name": "TUTORIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "B"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "LANDACAY JARAMILLO JORGE LUIS"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "message": null,
+    "page": 1,
+    "paginator": 10,
+    "total": 6,
+    "totalPages": 1,
+    "hasPreviousPage": false,
+    "hasNextPage": false,
+    "orderBy": null,
+    "ascending": false
+}

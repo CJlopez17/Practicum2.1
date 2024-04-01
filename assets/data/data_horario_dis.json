@@ -1,0 +1,154 @@
+{
+    "status": 200,
+    "data": [
+        {
+            "title": "TESIS DE LA MAESTRIA",
+            "description": "TESIS DE LA MAESTRIA",
+            "authors": [
+                {
+                    "name": "TORRES TANDAZO ROMMEL VICENTE",
+                    "lastname": null
+                }
+            ],
+            "category": "Component",
+            "date": null,
+            "image": null,
+            "video": null,
+            "extras": [
+                {
+                    "type": "schuelder",
+                    "name": "Calendario",
+                    "data": [
+                        {
+                            "title": "B",
+                            "description": null,
+                            "classroom": "",
+                            "type": "event - component",
+                            "place": "",
+                            "typeSchedule": "DOCENCIA",
+                            "beginClass": "18:00",
+                            "endClass": "19:59",
+                            "day": "MARTES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "CLAS",
+                                    "name": "DOCENCIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "11/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "3/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "PS",
+                                    "name": "POSGRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "E",
+                                    "name": "EN LINEA"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "B"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1105642332",
+                                    "name": "TORRES TANDAZO ROMMEL VICENTE"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "B",
+                            "description": null,
+                            "classroom": "",
+                            "type": "event - component",
+                            "place": "",
+                            "typeSchedule": "DOCENCIA",
+                            "beginClass": "18:00",
+                            "endClass": "19:59",
+                            "day": "JUEVES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "CLAS",
+                                    "name": "DOCENCIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "11/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "3/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "PS",
+                                    "name": "POSGRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "E",
+                                    "name": "EN LINEA"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "B"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1105642332",
+                                    "name": "TORRES TANDAZO ROMMEL VICENTE"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "message": null,
+    "page": 1,
+    "paginator": 10,
+    "total": 1,
+    "totalPages": 1,
+    "hasPreviousPage": false,
+    "hasNextPage": false,
+    "orderBy": null,
+    "ascending": false
+}

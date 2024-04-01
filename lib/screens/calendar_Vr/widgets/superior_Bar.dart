@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:practicum_final/screens/Prueba.dart';
-import 'package:practicum_final/utils/my_calendar_data_source.dart';
+import 'package:practicum_final/utils/responsive.dart';
 
 class SuperiorBar extends StatelessWidget {
   const SuperiorBar({super.key});
   @override
   Widget build(BuildContext context) {
+    Responsive responsive = Responsive();
     return ConstrainedBox(
       constraints: const BoxConstraints(
-        maxHeight: 45,
+        maxHeight: 60,
       ),
       child: SizedBox(
-        height: 45.0,
+        height: responsive.hp(10),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -19,10 +19,7 @@ class SuperiorBar extends StatelessWidget {
               icon: const Icon(Icons.arrow_back_ios_rounded),
               color: const Color(0xFF004270),
               onPressed: () {
-                MyCalendarDataSource dataSource = MyCalendarDataSource();
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => pruebaXD(dataSource: dataSource),
-                ));
+                
               },
             ),
             const Expanded(

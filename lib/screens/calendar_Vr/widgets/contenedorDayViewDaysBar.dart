@@ -4,14 +4,13 @@ import 'package:practicum_final/screens/calendar_Vr/widgets/days_superios.dart';
 import 'package:practicum_final/screens/calendar_Vr/widgets/superior_Bar.dart';
 
 class contenedorDeDayViewYDaysBar extends StatefulWidget {
+
   @override
-  // ignore: library_private_types_in_public_api
   _ContenedorDeDayViewYDaysBarState createState() =>
       _ContenedorDeDayViewYDaysBarState();
 
-      myonDateTap(DateTime mySelectedDate) {
-        print("Dia contenedor: $mySelectedDate");
-  }
+      myonDateTap(DateTime mySelectedDate) {}
+
 } 
 
 class _ContenedorDeDayViewYDaysBarState
@@ -36,7 +35,6 @@ class _ContenedorDeDayViewYDaysBarState
       body: Column(
         children: [
           calendarViewVertical(
-            selectDate: selectDate,
             onDateTap: (selectedDate) {
               setState(() {
                 selectedDay = selectedDate.weekday;
