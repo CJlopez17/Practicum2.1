@@ -6,18 +6,27 @@ import 'package:practicum_final/screens/calendar_Vr/widgets/contenedorDayViewDay
 
 class CalendarVr extends GetView<CalendarVrController> {
   const CalendarVr({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: OrientationBuilder(
-        builder: (context, orientation){
-          if(orientation == Orientation.portrait){
-            return contenedorDeDayViewYDaysBar();
-          }else{
-            return const calendarViewHorizontal();
-          }
-        }
-      )
+    return GetBuilder<CalendarVrController>(
+      init: CalendarVrController(),
+      initState: (_) {},
+      builder: (ctrl) {
+        return Scaffold(
+          body: OrientationBuilder(builder: (context, orientation) {
+            if (orientation == Orientation.portrait) {
+              return contenedorDeDayViewYDaysBar(
+                eventsInput: ctrl.events.value,
+              );
+            } else {
+              return const calendarViewHorizontal();
+            }
+          }),
+        );
+      },
     );
+
+    
   }
 }

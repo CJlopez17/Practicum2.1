@@ -1,23 +1,25 @@
+import 'package:calendar_view/calendar_view.dart';
 import 'package:flutter/material.dart';
 import 'package:practicum_final/screens/calendar_Vr/widgets/calendarViewVertical.dart';
 import 'package:practicum_final/screens/calendar_Vr/widgets/days_superios.dart';
 import 'package:practicum_final/screens/calendar_Vr/widgets/superior_Bar.dart';
 
 class contenedorDeDayViewYDaysBar extends StatefulWidget {
+  final List<CalendarEventData> eventsInput;
 
+  const contenedorDeDayViewYDaysBar({super.key, required this.eventsInput});
   @override
   _ContenedorDeDayViewYDaysBarState createState() =>
       _ContenedorDeDayViewYDaysBarState();
 
-      myonDateTap(DateTime mySelectedDate) {}
-
-} 
+  myonDateTap(DateTime mySelectedDate) {}
+}
 
 class _ContenedorDeDayViewYDaysBarState
     extends State<contenedorDeDayViewYDaysBar> {
   int selectedDay = DateTime.now().weekday;
   DateTime selectDate = DateTime.now();
-
+  
 
   @override
   Widget build(BuildContext context) {
@@ -27,14 +29,15 @@ class _ContenedorDeDayViewYDaysBarState
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(kToolbarHeight * 1.5),
           child: daysBarVertical(
-              todayWeekDate: DateTime.now().weekday,
-              onTap: handleDateTap,
-             ),
+            todayWeekDate: DateTime.now().weekday,
+            onTap: handleDateTap,
+          ),
         ),
       ),
       body: Column(
         children: [
           calendarViewVertical(
+            eventsInput: widget.eventsInput,
             onDateTap: (selectedDate) {
               setState(() {
                 selectedDay = selectedDate.weekday;
@@ -46,9 +49,9 @@ class _ContenedorDeDayViewYDaysBarState
     );
   }
 
-   void handleDateTap(int day) {
-
-    DateTime dateParse = DateTime.now().add(Duration(days: day - DateTime.now().weekday));
+  void handleDateTap(int day) {
+    DateTime dateParse =
+        DateTime.now().add(Duration(days: day - DateTime.now().weekday));
 
     setState(() {
       selectedDay = day;

@@ -10,11 +10,15 @@ class calendarViewVertical extends StatelessWidget {
   final Function(DateTime) onDateTap;
   final eventCtrl = EventController();
   Responsive responsive = Responsive();
+  final List<CalendarEventData> eventsInput;
+
 
   calendarViewVertical({
     required this.onDateTap,
+    required this.eventsInput,
     Key? key,
   }) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
@@ -50,10 +54,8 @@ class calendarViewVertical extends StatelessWidget {
             width: Get.width * 1.02,
             dayTitleBuilder: DayHeader.hidden,
             onEventTap: (events, date) {
-              Map<Day, List<Calendar>> allEvents = snapshot.data!;
-              var day = allEvents.keys.toList();
-              var eventos = allEvents[day]!;
               Get.bottomSheet(Material(
+                borderOnForeground: false,
                 borderRadius: BorderRadius.circular(30),
                 child: Column(
                   children: [
@@ -63,36 +65,33 @@ class calendarViewVertical extends StatelessWidget {
                       height: Get.height * 0.10,
                       width: Get.width,
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Center(
-                            child: Text(
-                              eventos.first.assignatureName,
-                              style: const TextStyle(
-                                fontSize: 25,
-                                color: Colors.black,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Center(
+                              child: Text(
+                                events.first.title,
+                                style: const TextStyle(
+                                    fontSize: 25, color: Colors.black),
                               ),
                             ),
-                          ),
-                          SizedBox(height: Get.height * 0.01),
-                          Text(
-                            eventos.first.classroom,
-                            style: const TextStyle(
-                              fontSize: 15,
-                              color: Colors.black87,
+                            SizedBox(height: Get.height * 0.01),
+                            Text(
+                              events.first.description as String,
+                              style: const TextStyle(
+                                fontSize: 15,
+                                color: Colors.black87,
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                    ),
+                          ]),
+                    )
                   ],
                 ),
               ));
             },
-            controller: EventController()..addAll(_events),
+            controller: eventCtrl..addAll(eventsInput),
             eventTileBuilder:
                 (date, events, boundary, startDuration, endDuration) {
-              if (events.first.title == 'Estadistica y probabilidad') {
+              if (events.first.title == 'PRACTICUM 2.1') {
                 return Container(
                   decoration: BoxDecoration(
                     color: const Color(0xFF004270),
@@ -131,12 +130,12 @@ class calendarViewVertical extends StatelessWidget {
                         style:
                             const TextStyle(fontSize: 23, color: Colors.white),
                       ),
-                      const SizedBox(height: 15),
-                      Text(
-                        events.first.description as String,
-                        style:
-                            const TextStyle(fontSize: 16, color: Colors.white),
-                      ),
+                      // const SizedBox(height: 15),
+                      // Text(
+                      //   events.first.description as String,
+                      //   style:
+                      //       const TextStyle(fontSize: 16, color: Colors.white),
+                      // ),
                     ],
                   ),
                 );
