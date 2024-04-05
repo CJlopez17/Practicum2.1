@@ -10,6 +10,8 @@ class Calendar {
   String endClass;
   String day;
   String teacherName;
+  String startClass;
+  String stopClass;
 
   Calendar(
       {required this.assignatureName,
@@ -20,18 +22,22 @@ class Calendar {
       required this.beginClass,
       required this.endClass,
       required this.day,
-      required this.teacherName});
+      required this.teacherName,
+      required this.startClass,
+      required this.stopClass});
 
   factory Calendar.fromJson(Map<String, dynamic> json) => Calendar(
-      assignatureName: json["assignature_name"] ?? '',
-      classroom: json["classroom"] ?? '',
-      place: json["place"] ?? '',
-      typeSchedule: json["typeSchedule"] ?? '',
-      parallel: json["parallel"] ?? '',
-      beginClass: json["beginClass"] ?? '',
-      endClass: json["endClass"] ?? '',
-      day: json["day"] ?? '',
-      teacherName: json['teacherName'] ?? '');
+      assignatureName: json["assignature_name"] ?? '--',
+      classroom: json["classroom"] ?? '--',
+      place: json["place"] ?? '--',
+      typeSchedule: json["typeSchedule"] ?? '--',
+      parallel: json["parallel"] ?? '--',
+      beginClass: json["beginClass"] ?? '--',
+      endClass: json["endClass"] ?? '--',
+      day: json["day"] ?? '--',
+      teacherName: json['teacherName'] ?? '--',
+      startClass: json['startClass']?? '--',
+      stopClass: json['stopClass']?? '--');
 
   Map<String, dynamic> toJson() => {
         "assignature_name": assignatureName,
@@ -42,6 +48,8 @@ class Calendar {
         "beginClass": beginClass,
         "endClass": endClass,
         "day": day, 
-        "teacherName": teacherName
+        "teacherName": teacherName,
+        "startClass": startClass,
+        "stopClass": stopClass
       };
 }

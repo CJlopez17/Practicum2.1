@@ -6,7 +6,7 @@ import 'package:practicum_final/models/data_model_visual.dart';
 class MyCalendarDataSource {
   static Future<Map<Day, List<Calendar>>> cargaClases() async {
     String jsonString =
-        await rootBundle.loadString('assets/data/data_horario_pres.json');
+        await rootBundle.loadString('assets/data/data_horario_dis.json');
     Map<String, dynamic> jsonData = jsonDecode(jsonString);
     var response = DataCalendar.fromJson(jsonData);
 
@@ -54,23 +54,23 @@ class MyCalendarDataSource {
 Day dayFromString(String dayString) {
   switch (dayString) {
     case 'LUNES':
-      return Day.LUNES;
+      return Day.monday;
     case 'MARTES':
-      return Day.MARTES;
+      return Day.tuesday;
     case 'MIERCOLES':
-      return Day.MIERCOLES;
+      return Day.wednesday;
     case 'JUEVES':
-      return Day.JUEVES;
+      return Day.thursday;
     case 'VIERNES':
-      return Day.VIERNES;
+      return Day.friday;
     case 'SABADO':
-      return Day.SABADO;
+      return Day.saturday;
     case 'DOMINGO':
-      return Day.DOMINGO;
+      return Day.sunday;
     default:
       throw Exception('Día no válido: $dayString');
   }
 }
 
 // ignore: constant_identifier_names
-enum Day { LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO }
+enum Day { monday, tuesday, wednesday, thursday, friday, saturday, sunday }

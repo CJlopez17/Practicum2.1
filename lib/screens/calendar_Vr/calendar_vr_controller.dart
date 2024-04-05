@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:calendar_view/calendar_view.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -10,7 +9,9 @@ import 'package:practicum_final/utils/my_calendar_data_source.dart';
 class CalendarVrController extends GetxController {
   CalendarVrController();
 
-  RxList<CalendarEventData> events = <CalendarEventData>[].obs;
+  RxList<CalendarEventData<Calendar>> events =
+      <CalendarEventData<Calendar>>[].obs;
+  Map<Day, List<Calendar>> eventsByDay = {};
 
   @override
   void onInit() {
@@ -33,15 +34,19 @@ class CalendarVrController extends GetxController {
     if (response.status == 200) {
       List<DataEvent> assignatures = response.data;
       List<Calendar> allEvents = [];
-      Map<Day, List<Calendar>> eventsByDay = {};
+      eventsByDay = {};
 
       for (var assignature in assignatures) {
         var name = assignature.title;
         var calendar = assignature.extras
             .firstWhere((element) => element.type == 'schuelder');
         var events = calendar.data.map((e) {
-          var teacherName =
-              e.relation.firstWhere((element) => element.type == 'Docente');
+          var teacherName = e.relation
+              .firstWhere((element) => element.type == 'Docente');
+          var beginClass = e.relation
+              .firstWhere((element) => element.type == 'Fecha de inicio');
+          var stopClass = e.relation
+              .firstWhere((element) => element.type == 'Fecha de fin');
 
           return Calendar.fromJson({
             "assignature_name": name,
@@ -52,7 +57,9 @@ class CalendarVrController extends GetxController {
             "beginClass": e.beginClass,
             "endClass": e.endClass,
             "day": e.day,
-            "teacherName": teacherName.name
+            "teacherName": teacherName.name,
+            "startClass": beginClass.name,
+            "stopClass": stopClass.name
           });
         });
 
@@ -63,38 +70,51 @@ class CalendarVrController extends GetxController {
         }
         allEvents.addAll(events);
       }
-      parseVerticalViewData(eventsByDay);
     }
   }
 
-  void parseVerticalViewData(Map<Day, List<Calendar>> eventsByDay) {
-    print(eventsByDay);
-
-    var onlyDayEvents = eventsByDay[dayFromString('LUNES')] ?? [];
-
+  void parseVerticalViewData(int day) {
+    DateTime currentDate = _now;
+    String dayName = getDayName(day);
+    var onlyDayEvents = eventsByDay[dayFromString(dayName.toUpperCase())] ?? [];
     var parsedEvents = onlyDayEvents.map((e) {
       var splitStarHour = e.beginClass.split(":");
       var splitEndHour = e.endClass.split(":");
       return CalendarEventData(
-        date: _now,
-        title: e.assignatureName,
-        description: e.teacherName,
-        startTime: DateTime(
-            _now.year,
-            _now.month,
-            _now.day,
+          date: currentDate,
+          title: e.assignatureName,
+          description: '${e.typeSchedule}, ${e.place}, ${e.classroom}',
+          startTime: DateTime(
+            currentDate.year,
+            currentDate.month,
+            currentDate.day,
             int.tryParse(splitStarHour[0]) ?? 0,
-            int.tryParse(splitStarHour[1]) ?? 0),
-        endTime: DateTime(
-            _now.year,
-            _now.month,
-            _now.day,
+            int.tryParse(splitStarHour[1]) ?? 0,
+          ),
+          endTime: DateTime(
+            currentDate.year,
+            currentDate.month,
+            currentDate.day,
             int.tryParse(splitEndHour[0]) ?? 0,
-            int.tryParse(splitEndHour[1]) ?? 0),
-      );
-    });
-
+            int.tryParse(splitEndHour[1]) ?? 0,
+          ),
+          event: e);
+    }).toList();
     events.assignAll(parsedEvents);
+
     update();
+  }
+
+  String getDayName(int day) {
+    List<String> days = [
+      'lunes',
+      'martes',
+      'miercoles',
+      'jueves',
+      'viernes',
+      'sabado',
+      'domingo'
+    ];
+    return days[day - 1];
   }
 }

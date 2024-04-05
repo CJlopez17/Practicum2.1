@@ -19,7 +19,7 @@ class _daysBarVerticalState extends State<daysBarVertical> {
   int todayWeekDate = DateTime.now().weekday;
   int selectedDay = DateTime.now().weekday;
   int highlightedDay = DateTime.now().weekday;
-  final List<String> daysWeek = ['L', 'M', 'X', 'J', 'V', 'S', 'D'];
+  final List<String> daysWeek = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -47,10 +47,10 @@ class _daysBarVerticalState extends State<daysBarVertical> {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: isSelected
-                    ? const Color(0xFF004270) // Color para el día seleccionado
+                    ? const Color(0xFF004270) 
                     : (isHighlighted
                         ? const Color(
-                            0xFFF2B704) // Color para el día resaltado (transcurriendo)
+                            0xFFF2B704) 
                         : Colors.transparent),
               ),
               child: Center(

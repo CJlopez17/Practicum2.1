@@ -1,18 +1,18 @@
 import 'package:calendar_view/calendar_view.dart';
 import 'package:flutter/material.dart';
+import 'package:practicum_final/models/data_model_visual.dart';
 import 'package:practicum_final/screens/calendar_Vr/widgets/calendarViewVertical.dart';
 import 'package:practicum_final/screens/calendar_Vr/widgets/days_superios.dart';
 import 'package:practicum_final/screens/calendar_Vr/widgets/superior_Bar.dart';
 
 class contenedorDeDayViewYDaysBar extends StatefulWidget {
-  final List<CalendarEventData> eventsInput;
+  final List<CalendarEventData<Calendar>> eventsInput;
+  final Function(int) onTap;
 
-  const contenedorDeDayViewYDaysBar({super.key, required this.eventsInput});
+  const contenedorDeDayViewYDaysBar({super.key, required this.eventsInput, required this.onTap});
   @override
-  _ContenedorDeDayViewYDaysBarState createState() =>
+  State<contenedorDeDayViewYDaysBar> createState() =>
       _ContenedorDeDayViewYDaysBarState();
-
-  myonDateTap(DateTime mySelectedDate) {}
 }
 
 class _ContenedorDeDayViewYDaysBarState
@@ -57,6 +57,7 @@ class _ContenedorDeDayViewYDaysBarState
       selectedDay = day;
       selectDate = dateParse;
     });
-    widget.myonDateTap(dateParse);
+    
+    widget.onTap(day);
   }
 }

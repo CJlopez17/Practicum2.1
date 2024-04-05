@@ -1282,6 +1282,200 @@
                     ]
                 }
             ]
+        },
+        {
+            "title": "REDACCION DE PROPUESTAS DE PREVENCION Y REMEDIACION PSICOLOGICA",
+            "description": "REDACCION DE PROPUESTAS DE PREVENCION Y REMEDIACION PSICOLOGICA",
+            "authors": [],
+            "category": "Component",
+            "date": null,
+            "image": null,
+            "video": null,
+            "extras": [
+                {
+                    "type": "schuelder",
+                    "name": "Calendario",
+                    "data": [
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "AULA 0916",
+                            "type": "event - component",
+                            "place": "EDIFICIO 09",
+                            "typeSchedule": "PRACTICA",
+                            "beginClass": "18:00",
+                            "endClass": "18:59",
+                            "day": "MARTES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "PRAC",
+                                    "name": "PRACTICA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "TORRES DIAZ JUAN CARLOS"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "AULA 0916",
+                            "type": "event - component",
+                            "place": "EDIFICIO 09",
+                            "typeSchedule": "DOCENCIA",
+                            "beginClass": "19:00",
+                            "endClass": "19:59",
+                            "day": "LUNES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "CLAS",
+                                    "name": "DOCENCIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "TORRES DIAZ JUAN CARLOS"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "A",
+                            "description": null,
+                            "classroom": "AULA 0916",
+                            "type": "event - component",
+                            "place": "EDIFICIO 09",
+                            "typeSchedule": "TUTORIA",
+                            "beginClass": "20:00",
+                            "endClass": "20:59",
+                            "day": "LUNES",
+                            "location": null,
+                            "relation": [
+                                {
+                                    "type": "Tipo de reunión",
+                                    "identifier": "TUTO",
+                                    "name": "TUTORIA"
+                                },
+                                {
+                                    "type": "Fecha de inicio",
+                                    "identifier": null,
+                                    "name": "1/10/2023 0:00:00"
+                                },
+                                {
+                                    "type": "Fecha de fin",
+                                    "identifier": null,
+                                    "name": "28/2/2024 0:00:00"
+                                },
+                                {
+                                    "type": "Nivel Acádemico",
+                                    "identifier": "GR",
+                                    "name": "GRADO"
+                                },
+                                {
+                                    "type": "Periodo Academico",
+                                    "identifier": "202364",
+                                    "name": "OCT/2023 - FEB/2024"
+                                },
+                                {
+                                    "type": "Modalidad",
+                                    "identifier": "P",
+                                    "name": "PRESENCIAL"
+                                },
+                                {
+                                    "type": "Paralelo",
+                                    "identifier": null,
+                                    "name": "A"
+                                },
+                                {
+                                    "type": "Docente",
+                                    "identifier": "1150187456",
+                                    "name": "TORRES DIAZ JUAN CARLOS"
+                                },
+                                {
+                                    "type": "EnlaceTutoria",
+                                    "identifier": null,
+                                    "name": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "message": null,

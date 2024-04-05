@@ -17,16 +17,20 @@ class CalendarVr extends GetView<CalendarVrController> {
           body: OrientationBuilder(builder: (context, orientation) {
             if (orientation == Orientation.portrait) {
               return contenedorDeDayViewYDaysBar(
+                onTap: (day) {
+                  ctrl.parseVerticalViewData(day);
+                },
                 eventsInput: ctrl.events.value,
               );
             } else {
-              return const calendarViewHorizontal();
+              return calendarViewHorizontal(
+                eventsInputs: ctrl.events.value,
+                eventsInput: const [],
+              );
             }
           }),
         );
       },
     );
-
-    
   }
 }

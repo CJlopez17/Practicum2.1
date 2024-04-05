@@ -7,17 +7,17 @@ import 'package:practicum_final/widgets/ScreenRotate.dart';
 import 'package:practicum_final/screens/calendar_Vr/widgets/superior_Bar.dart';
 import 'package:calendar_view/calendar_view.dart';
 
-// ignore: camel_case_types
 class calendarViewHorizontal extends StatelessWidget {
-  const calendarViewHorizontal({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return const _MyWeekView();
-  }
-}
+  final evenCtrl = EventController();
+  final List<CalendarEventData> eventsInputs;
 
-class _MyWeekView extends StatelessWidget {
-  const _MyWeekView();
+  calendarViewHorizontal(
+      {Key? key,
+      required this.eventsInputs,
+      required List<CalendarEventData<Object?>> eventsInput})
+      : super(
+          key: key,
+        );
 
   final List<String> daysWeek = const [
     'Lunes',
@@ -28,6 +28,7 @@ class _MyWeekView extends StatelessWidget {
     'Sábado',
     'Domingo'
   ];
+
   String getWeekdayString(DateTime date) {
     return daysWeek[date.weekday - 1];
   }
@@ -44,24 +45,53 @@ class _MyWeekView extends StatelessWidget {
             future: MyCalendarDataSource.cargaClases(),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
-                return const Center(child: CircularProgressIndicator());
+                return const Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      CircularProgressIndicator(),
+                      SizedBox(height: 30),
+                      Text(
+                        'Cargando horario...',
+                        style:
+                            TextStyle(fontSize: 20, color: Color(0xFF004270)),
+                      ),
+                    ],
+                  ),
+                );
               } else if (snapshot.hasError) {
-                const Text('Error en los datos');
-                return const Center(child: CircularProgressIndicator());
+                // ignore: avoid_print
+                print('Error: ${snapshot.error}');
+                return const Center(
+                    child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    CircularProgressIndicator(),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Text(
+                      'Error al cargar horario',
+                      style: TextStyle(fontSize: 20, color: Color(0xFF004270)),
+                    ),
+                    SizedBox(height: 3),
+                    Text('Intente de nuevo...',
+                        style:
+                            TextStyle(fontSize: 20, color: Color(0xFF004270)))
+                  ],
+                ));
               } else {
                 return WeekView(
                   minDay: DateTime(2019),
                   maxDay: DateTime(2050),
                   initialDay: DateTime.now(),
-                  heightPerMinute: 1,
+                  heightPerMinute: 1.4,
                   weekPageHeaderBuilder: WeekHeader.hidden,
                   hourIndicatorSettings:
                       const HourIndicatorSettings(color: Colors.black54),
-                  startDay: WeekDays.monday,
                   startHour: 6,
                   showVerticalLines: false,
                   width: Get.width * 0.87,
-                  onDateTap: (date) {},
                   weekDayBuilder: (date) {
                     final int todayWeekDate = DateTime.now().weekday;
                     final int widgetWeekDay = date.weekday;
@@ -87,13 +117,15 @@ class _MyWeekView extends StatelessWidget {
                               )),
                             )));
                   },
-                  controller: EventController()..addAll(_events),
+                  controller: EventController()..addAll(eventsInputs),
                   eventTileBuilder:
                       (date, events, boundary, startDuration, endDuration) {
-                    if (events.first.title == 'Estadistica y probabilidad') {
+                    int titleLength = events.first.title.length;
+                    if (titleLength >= 22) {
                       return Container(
+                        margin: const EdgeInsets.only(top: 1),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF004270),
+                          color: Colors.red,
                           borderRadius: BorderRadius.circular(10),
                         ),
                         padding: const EdgeInsets.all(4.8),
@@ -101,9 +133,11 @@ class _MyWeekView extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              events.first.title,
+                              events.first.title.length > 24
+                                  ? '${events.first.title.substring(0, 22)}...'
+                                  : events.first.title,
                               style: const TextStyle(
-                                fontSize: 15,
+                                fontSize: 13,
                                 color: Colors.white,
                               ),
                             ),
@@ -111,21 +145,25 @@ class _MyWeekView extends StatelessWidget {
                         ),
                       );
                     } else {
-                      return Container(
-                        decoration: BoxDecoration(
-                          color: const Color(0xFFF2B705),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        padding: const EdgeInsets.all(4.8),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              events.first.title,
-                              style: const TextStyle(
-                                  fontSize: 15, color: Colors.white),
-                            ),
-                          ],
+                      return Center(
+                        child: Container(
+                          margin: const EdgeInsets.only(top: 4),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF004270),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          padding: const EdgeInsets.all(1),
+                          child: Flex(
+                            direction: Axis.vertical,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                events.first.title,
+                                style: const TextStyle(
+                                    fontSize: 13, color: Colors.white),
+                              ),
+                            ],
+                          ),
                         ),
                       );
                     }
@@ -137,23 +175,3 @@ class _MyWeekView extends StatelessWidget {
     );
   }
 }
-
-DateTime get _now => DateTime.now();
-
-List<CalendarEventData> _events = [
-  CalendarEventData(
-    date: _now,
-    title: "Estadistica y probabilidad",
-    description: "Docente: Juan Carlos Torres, Edificio: 9, Aula: 919",
-    startTime: DateTime(_now.year, _now.month, _now.day, 07, 00),
-    endTime: DateTime(_now.year, _now.month, _now.day, 09, 59),
-  ),
-  CalendarEventData(
-    date: _now,
-    startTime: DateTime(_now.year, _now.month, _now.day, 12, 00),
-    endTime: DateTime(_now.year, _now.month, _now.day, 14, 59),
-    title: "PRACTICUM 2.1",
-    description:
-        "Docente: GUAMAN BASTIDAS FRANCO OLIVIO, Edificio: 4, Aula: 0425",
-  ),
-];
