@@ -22,10 +22,10 @@ class CalendarVrController extends GetxController {
   DateTime get _now => DateTime.now();
 
   _initConfig() {
-    fetchAcademicSchedules();
+    fetchAcademicSchedulesPerDay();
   }
 
-  fetchAcademicSchedules() async {
+  fetchAcademicSchedulesPerDay() async {
     String jsonString =
         await rootBundle.loadString('assets/data/data_horario_pres.json');
     Map<String, dynamic> jsonData = jsonDecode(jsonString);
@@ -41,8 +41,8 @@ class CalendarVrController extends GetxController {
         var calendar = assignature.extras
             .firstWhere((element) => element.type == 'schuelder');
         var events = calendar.data.map((e) {
-          var teacherName = e.relation
-              .firstWhere((element) => element.type == 'Docente');
+          var teacherName =
+              e.relation.firstWhere((element) => element.type == 'Docente');
           var beginClass = e.relation
               .firstWhere((element) => element.type == 'Fecha de inicio');
           var stopClass = e.relation
@@ -72,6 +72,41 @@ class CalendarVrController extends GetxController {
       }
     }
   }
+
+  // fetchAcademicSchedules() async {
+  //   String jsonString =
+  //       await rootBundle.loadString('assets/data/data_horario_pres.json');
+  //   Map<String, dynamic> jsonData = jsonDecode(jsonString);
+  //   var response = DataCalendar.fromJson(jsonData);
+
+  //   if (response.status == 200) {
+  //     List<DataEvent> assignatures = response.data;
+
+  //     List<Calendar> allEvents = [];
+
+  //     for (var assignature in assignatures) {
+  //       var name = assignature.title;
+  //       var calendar = assignature.extras.firstWhere(
+  //           (element) => element.type == 'schuelder',
+  //           orElse: () => extras(data: []));
+  //       for (var day in calendar.data) {
+  //         allEvents.add(Calendar(
+  //             assignatureName: name,
+  //             day: day.day,
+  //             classroom: '',
+  //             place: '',
+  //             typeSchedule: '',
+  //             parallel: '',
+  //             beginClass: '',
+  //             endClass: '',
+  //             teacherName: '',
+  //             startClass: '',
+  //             stopClass: ''));
+  //       }
+  //     }
+  //     return allEvents;
+  //   }
+  // }
 
   void parseVerticalViewData(int day) {
     DateTime currentDate = _now;
