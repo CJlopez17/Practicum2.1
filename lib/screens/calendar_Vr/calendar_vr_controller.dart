@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:calendar_view/calendar_view.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:practicum_final/models/data_model_calendar.dart';
@@ -8,6 +9,7 @@ import 'package:practicum_final/utils/my_calendar_data_source.dart';
 
 class CalendarVrController extends GetxController {
   CalendarVrController();
+  Rx<Color> tileColor = Colors.red.obs;
 
   RxList<CalendarEventData<Calendar>> events =
       <CalendarEventData<Calendar>>[].obs;
@@ -72,41 +74,6 @@ class CalendarVrController extends GetxController {
       }
     }
   }
-
-  // fetchAcademicSchedules() async {
-  //   String jsonString =
-  //       await rootBundle.loadString('assets/data/data_horario_pres.json');
-  //   Map<String, dynamic> jsonData = jsonDecode(jsonString);
-  //   var response = DataCalendar.fromJson(jsonData);
-
-  //   if (response.status == 200) {
-  //     List<DataEvent> assignatures = response.data;
-
-  //     List<Calendar> allEvents = [];
-
-  //     for (var assignature in assignatures) {
-  //       var name = assignature.title;
-  //       var calendar = assignature.extras.firstWhere(
-  //           (element) => element.type == 'schuelder',
-  //           orElse: () => extras(data: []));
-  //       for (var day in calendar.data) {
-  //         allEvents.add(Calendar(
-  //             assignatureName: name,
-  //             day: day.day,
-  //             classroom: '',
-  //             place: '',
-  //             typeSchedule: '',
-  //             parallel: '',
-  //             beginClass: '',
-  //             endClass: '',
-  //             teacherName: '',
-  //             startClass: '',
-  //             stopClass: ''));
-  //       }
-  //     }
-  //     return allEvents;
-  //   }
-  // }
 
   void parseVerticalViewData(int day) {
     DateTime currentDate = _now;

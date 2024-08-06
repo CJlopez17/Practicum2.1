@@ -36,7 +36,7 @@ class _ContenedorDeDayViewYDaysBarState
       ),
       body: Column(
         children: [
-          calendarViewVertical(
+          CalendarViewVertical(
             eventsInput: widget.eventsInput,
             onDateTap: (selectedDate) {
               setState(() {

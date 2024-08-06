@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:practicum_final/screens/calendar_Vr/widgets/colorsAssignature.dart';
 
-class CustomBottomSheet extends StatelessWidget {
+class getBottonInfo extends StatelessWidget {
   final dynamic events;
   final box = GetStorage();
 
-  CustomBottomSheet({Key? key, required this.events}) : super(key: key);
+  getBottonInfo({Key? key, required this.events}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -70,32 +71,26 @@ class CustomBottomSheet extends StatelessWidget {
               style: const TextStyle(fontSize: 16, color: Colors.black54),
             ),
             const SizedBox(height: 20),
-            Center(
-              child: ElevatedButton(
+            ElevatedButton(
                 onPressed: () {
                   showModalBottomSheet(
                     context: context,
                     builder: (BuildContext context) {
-                      return ColorPickerBottomSheet(
+                      return colorAssignature(
                         onColorSelected: (Color color) {
-                          return box.write(events.first.event?.assignatureName, color);
-                          },
+                          return box.write(
+                              events.first.event?.assignatureName, color);
+                        },
                       );
                     },
                   );
                 },
-                style: ElevatedButton.styleFrom(
-                  foregroundColor: Colors.white,
-                  backgroundColor: const Color(0xFF004270),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
+                child: const Center(
+                  child: Text(
+                    'Cambiar color de materia',
+                    style: TextStyle(fontSize: 20, color: Color(0xFF004270)),
                   ),
-                ),
-                child: const Text('Cambiar color de Materia'),
-              ),
-            ),
+                )),
           ],
         ),
       ),

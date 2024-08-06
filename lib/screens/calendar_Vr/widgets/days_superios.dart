@@ -17,7 +17,6 @@ class daysBarVertical extends StatefulWidget {
 
 class _daysBarVerticalState extends State<daysBarVertical> {
   int todayWeekDate = DateTime.now().weekday;
-  int selectedDay = DateTime.now().weekday;
   int highlightedDay = DateTime.now().weekday;
   final List<String> daysWeek = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
   @override
@@ -25,19 +24,19 @@ class _daysBarVerticalState extends State<daysBarVertical> {
     return Container(
       decoration: BoxDecoration(
         color: const Color(0xFFF2F2F2),
-        borderRadius: BorderRadius.circular(25.0),
+        borderRadius: BorderRadius.circular(30.0),
       ),
       padding: const EdgeInsets.all(9.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: List.generate(daysWeek.length, (index) {
           String day = daysWeek[index];
-          bool isSelected = selectedDay == index + 1;
+          bool isSelected = todayWeekDate == index + 1;
           bool isHighlighted = highlightedDay == index + 1;
           return InkWell(
             onTap: () {
               setState(() {
-                selectedDay = index + 1;
+                todayWeekDate = index + 1;
               });
               widget.onTap(index + 1);
             },

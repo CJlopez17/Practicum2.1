@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 
-class ColorPickerBottomSheet extends StatefulWidget {
+class colorAssignature extends StatefulWidget {
   final Function(Color) onColorSelected;
 
-  const ColorPickerBottomSheet({Key? key, required this.onColorSelected})
+  const colorAssignature({Key? key, required this.onColorSelected})
       : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
   _ColorPickerBottomSheetState createState() => _ColorPickerBottomSheetState();
 }
 
-class _ColorPickerBottomSheetState extends State<ColorPickerBottomSheet> {
+class _ColorPickerBottomSheetState extends State<colorAssignature> {
   late Color selectedColor;
 
   @override
@@ -25,6 +24,10 @@ class _ColorPickerBottomSheetState extends State<ColorPickerBottomSheet> {
     return SingleChildScrollView(
       child: Container(
         padding: const EdgeInsets.all(20.0),
+        decoration: const BoxDecoration(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
+          color: Colors.white,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -37,7 +40,7 @@ class _ColorPickerBottomSheetState extends State<ColorPickerBottomSheet> {
               spacing: 20,
               children: _buildColorButtons(),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 50),
             ElevatedButton(
               onPressed: () {
                 widget.onColorSelected(selectedColor);
@@ -60,20 +63,20 @@ class _ColorPickerBottomSheetState extends State<ColorPickerBottomSheet> {
     final List<Color> colors = [
       const Color(0xFF004270),
       const Color(0xFF007FD7),
+      const Color(0xFF4DB8FA),
+      const Color(0xFF4DE4FA),
+      const Color(0xFF069E61),
+      const Color(0xFF06C761),
+      const Color(0xFF06E561),
+      const Color(0xFF05EB59),
+      const Color(0xFFF28405),
+      const Color(0xFFF2A505),
       const Color(0xFFF2B705),
-      Colors.green,
-      Colors.yellow,
-      Colors.orange,
-      Colors.purple,
-      Colors.teal,
-      Colors.pink,
-      Colors.cyan,
-      Colors.indigo,
-      Colors.brown,
-      Colors.grey,
-      Colors.amber,
-      Colors.lime,
-      Colors.deepOrange,
+      const Color(0xFFF2E505),
+      const Color(0xFF980C2E),
+      const Color(0xFFBB3123),
+      const Color(0xFFE13123),
+      const Color(0xFFFF3123),
     ];
 
     return colors.map((color) {

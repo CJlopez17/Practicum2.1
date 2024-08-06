@@ -19,7 +19,7 @@ class SuperiorBar extends StatelessWidget {
               icon: const Icon(Icons.arrow_back_ios_rounded),
               color: const Color(0xFF004270),
               onPressed: () {
-                
+                // volver a pantalla anterior
               },
             ),
             const Expanded(

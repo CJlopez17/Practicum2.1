@@ -14,21 +14,22 @@ class CalendarVr extends GetView<CalendarVrController> {
       initState: (_) {},
       builder: (ctrl) {
         return Scaffold(
-          body: OrientationBuilder(builder: (context, orientation) {
-            if (orientation == Orientation.portrait) {
-              return contenedorDeDayViewYDaysBar(
-                onTap: (day) {
-                  ctrl.parseVerticalViewData(day);
-                },
-                eventsInput: ctrl.events.value,
-              );
-            } else {
-              return calendarViewHorizontal(
-                eventsInputs: ctrl.events.value,
-                eventsInput: const [],
-              );
-            }
-          }),
+          body: OrientationBuilder(
+            builder: (context, orientation) {
+              if (orientation == Orientation.portrait) {
+                return contenedorDeDayViewYDaysBar(
+                  onTap: (day) {
+                    ctrl.parseVerticalViewData(day);
+                  },
+                  eventsInput: ctrl.events.value,
+                );
+              } else {
+                return CalendarViewHorizontal(
+                  eventsInputs: ctrl.events.value,
+                );
+              }
+            },
+          ),
         );
       },
     );
