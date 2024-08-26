@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practicum_final/prueba.dart';
 import 'package:practicum_final/utils/responsive.dart';
 
 class SuperiorBar extends StatelessWidget {
@@ -19,9 +20,20 @@ class SuperiorBar extends StatelessWidget {
               icon: const Icon(Icons.arrow_back_ios_rounded),
               color: const Color(0xFF004270),
               onPressed: () {
-                // volver a pantalla anterior
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MyApp()),
+                );
               },
             ),
+            /*IconButton(
+              icon: const Icon(Icons.arrow_back_ios_rounded),
+              color: const Color(0xFF004270),
+              onPressed: () {
+                
+                // volver a pantalla anterior
+              },
+            ),*/
             const Expanded(
               child: Align(
                 alignment: Alignment.center,
